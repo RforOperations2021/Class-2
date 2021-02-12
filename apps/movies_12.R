@@ -4,11 +4,12 @@ library(DT)
 library(stringr)
 library(dplyr)
 library(tools)
+library(shinythemes)
 load("movies.Rdata")
 
 # Define UI for application that plots features of movies -----------
 ui <- fluidPage(
-  
+  themeSelector(),
   # Application title -----------------------------------------------
   titlePanel("Movie browser"),
   
